@@ -1,0 +1,86 @@
+body {
+  color: #212121;
+  font-family: 'Ubuntu', sans-serif;
+}
+.gantt {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.gantt td, .gantt th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+/*
+
+.gantt td:nth-child(even) {
+  background-color: #222222;
+}
+
+.gantt tr:nth-child(even){background-color: #f2f2f2;}
+
+.gantt tr:hover {background-color: #ddd;}*/
+
+.gantt th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  right: 25px;
+}
+
+.gantt .linear{
+  background-color: black;
+  border-left: none;
+  border-right: none;
+}
+.gantt .parallel{
+  background-color: darkblue;
+  border-left: none;
+  border-right: none;
+}
+
+.gantt .completed{
+  background-color: forestgreen;
+  border-left: none;
+  border-right: none;
+}
+
+.slow, .expensive, .overBudget, .overTime{
+  padding: 5px;
+  color: orangered;
+}
+
+.inexpensive, .fast, .underBudget, .onTime{
+  padding: 5px;
+  color: blue;
+}
+
+.resourceName {
+  padding: 2px;
+}
+
+.resourceList {
+  padding: 20px 20px 20px 10px;
+  /*position: absolute;*/
+  margin-top: 20px;
+  right: 20px;
+}
+.resourceListHeader {
+  font-weight: bold;
+}
+
+.leftPanel, .rightPanel {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
